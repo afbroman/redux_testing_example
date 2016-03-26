@@ -3,12 +3,9 @@ import App from '../../src/components/app';
 
 describe('App', () => {
 
-  it('shows the correct text', () => {
-
+  it('shows a comment box', () => {
     const component = renderComponent(App);
-
-    expect(component).to.contain('React simple starter');
-
-  });
+    expect(component.find('.comment-box')).to.exist;
+  })
 
 });
